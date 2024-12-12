@@ -1,0 +1,50 @@
+.analysis-page {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+#analysis-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-height: 70vh; /* Adjust the height for the scrollable container */
+  overflow-y: scroll; /* Ensure the vertical scrollbar appears */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional for visual clarity */
+  background-color: #fff; /* Optional for better contrast */
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px; /* Optional for rounded images */
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+/* Optional: Style the scrollbar */
+#analysis-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+#analysis-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+#analysis-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

@@ -1,0 +1,95 @@
+/* src/components/Navbar.css */
+
+/* .navbar {
+    background-color: #4A90E2;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .container-fluid {
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+  }
+  
+  .nav-item {
+    margin-left: 50px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.2em;
+  }
+  
+  .nav-link:hover {
+    color: #F3E5AB;
+  }
+   */
+
+   .navbar {
+    background-color: #4A90E2;
+    padding: 20px;
+    width: 100%;
+    margin: 0; /* Remove any potential margin */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    position: fixed; /* Keep it fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.container-fluid {
+    max-width: none; /* Allow the container to stretch fully */
+    margin: 0;
+    padding: 0 20px; /* Add some padding for spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure it spans the navbar's full width */
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.nav-item {
+    margin-left: 50px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.nav-link:hover {
+    color: #F3E5AB;
+}

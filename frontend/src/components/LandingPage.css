@@ -1,0 +1,329 @@
+/* src/components/LandingPage.css
+
+:root {
+    --background-color: #F3E5AB;
+    --text-color: #1E1E1E;
+    --heading-color: #2E5090;
+    --navbar-color: #4A90E2;
+    --button-color: #2ECC71;
+    --card-color: #FFFFFF;
+    --link-color: #1A5F7A;
+  }
+  
+  body {
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-right: 50px;
+  }
+  
+  h1 {
+    color: var(--heading-color);
+    font-size: 3em;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: 1.4em;
+    margin-bottom: -70px;
+  }
+  
+  .game-card {
+    flex: 1;
+    background-color: var(--card-color);
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .game-card:hover .image img {
+    transform: scale(1.1);
+  }
+  
+  .game-title {
+    color: var(--heading-color);
+    font-size: 2.2em;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .game-card:hover .game-title {
+    color: var(--navbar-color);
+    transform: translateX(10px);
+  }
+  
+  button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.4em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: translateX(-100%);
+    transition: all 0.6s;
+    z-index: -1;
+  }
+  
+  button:hover::before {
+    transform: translateX(100%);
+  }
+  
+  button:hover {
+    background-color: var(--navbar-color);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover span {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .text-content {
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+   */
+
+
+
+   :root {
+    --background-color: #F3E5AB;
+    --text-color: #000000;
+    --heading-color: #2E5090;
+    --navbar-color: #4A90E2;
+    --button-color: #2ECC71;
+    --card-color: #FFFFFF;
+    --link-color: #1A5F7A;
+  }
+  
+  body {
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure proper alignment on smaller screens */
+    height: 100%; /* Use full container height */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in dimensions */
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-right: 50px;
+    text-align: center; /* Center text horizontally */
+  }
+  
+  h1 {
+    color: var(--heading-color);
+    font-size: 3em;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .game-card {
+    flex: 1;
+    background-color: var(--card-color);
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .game-card:hover .image img {
+    transform: scale(1.1);
+  }
+  
+  .game-title {
+    color: var(--heading-color);
+    font-size: 2.2em;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .game-card:hover .game-title {
+    color: var(--navbar-color);
+    transform: translateX(10px);
+  }
+  
+  button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.4em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: translateX(-100%);
+    transition: all 0.6s;
+    z-index: -1;
+  }
+  
+  button:hover::before {
+    transform: translateX(100%);
+  }
+  
+  button:hover {
+    background-color: var(--navbar-color);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover span {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .text-content {
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+  
